@@ -25,7 +25,7 @@ From the command line, `cd` to the folder containing a copy of this project, and
 
 This will download the required dependencies, clean the existing project, recompile all source code and run all the tests. 
 
-View the Concordion output under the subfolder `target/concordion/spec/spec`
+View the Concordion output under the subfolder `build/reports/spec/spec`
 
 #### Additional Gradle Files
 `publish.gradle` is only needed if you want to publish the output to Github pages.
@@ -36,7 +36,7 @@ If copying the project for your own use, you probably won't want this file.
 
 1. Download and install maven
 2. From a command line opened at the location to which this package has been unzipped, run `mvn test`
-3. View the Concordion output under the subfolder `target/concordion/spec/spec`
+3. View the Concordion output under the subfolder `target/concordion/spec`
 
 ## Mailing List
 Feel free to discuss this demo project on the Concordion [mailing list](https://groups.google.com/d/forum/concordion).
