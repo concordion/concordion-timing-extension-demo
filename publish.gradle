@@ -1,17 +1,10 @@
 // Publishes the Concordion output to Github Pages
 // gradle -b publish.gradle publishDocs
 
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'org.ajoberstar:gradle-git:0.13.0' 
-    }
+plugins {
+    id 'org.ajoberstar.grgit' version '1.7.1'
+    id 'org.ajoberstar.github-pages' version '1.7.1'
 }
-
-apply plugin: 'org.ajoberstar.github-pages'
 
 githubPages {
     repoUri = 'git@github.com:concordion/concordion-timing-extension-demo.git'      
