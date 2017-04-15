@@ -1,18 +1,20 @@
 package spec;
 
-import org.junit.runner.RunWith;
-
-import org.concordion.api.extension.Extensions;
+import org.concordion.api.extension.ConcordionExtension;
+import org.concordion.api.extension.Extension;
 import org.concordion.ext.timing.TimerExtension;
 import org.concordion.integration.junit4.ConcordionRunner;
+import org.junit.runner.RunWith;
 
 import java.util.regex.Pattern;
 
-
 @RunWith(value = ConcordionRunner.class)
-@Extensions(value = TimerExtension.class)
-public class TimingFixture {
+public class TimerFixture {
 
+    @Extension
+    ConcordionExtension TimingExtension = new TimerExtension()//.withIcon("/org/concordion/ext/timing/img/stopwatch.png")
+//            .withShowByDefault(false);
+;
     public void timeLong() {
         try {
             Thread.sleep(1000);
@@ -60,4 +62,8 @@ public class TimingFixture {
         return (code > 0) && (code < 10000);
     }
 
+
 }
+
+
+
