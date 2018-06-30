@@ -6,7 +6,7 @@
 Demonstrates the usage of the Concordion Timing Extension
 
 ## Introduction
-This project demonstrates the usage of the [Concordion](http://concordion.org) [Timing Extension](https://github.com/concordion/concordion-timing-extension).
+This project demonstrates the usage of the [Concordion](https://concordion.org) [Timing Extension](https://github.com/concordion/concordion-timing-extension).
 
 Example output is shown [here](https://concordion.github.io/concordion-timing-extension-demo/spec/spec/Main.html). 
 
