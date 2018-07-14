@@ -85,7 +85,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <concordion.version>2.1.0</concordion.version>
+        <concordion.version>2.2.0</concordion.version>
         <timing-extension.version>1.1.0</timing-extension.version>
     </properties>
 </project>
